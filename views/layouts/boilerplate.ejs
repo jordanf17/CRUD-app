@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL PRODUCTS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     <style>
+        body {
+          background-image: url('https://i.pinimg.com/originals/fc/b8/48/fcb8485ea789c98ae3aa1a9143d441e5.jpg');
+          background-size: cover;
+        }
+        main{
+          background-color: rgba(255, 255, 255, 0.8);
+          width: 200px;
+            padding: 10px;
+            margin: 0;
+        }
+        .container{
+            width: 400px;
+        }
+        </style> 
+</head>
+<body class="d-flex flex-column vh-100">
+    <%- include('../partials/header') %> 
+    <main class="container mt-auto  ">
+       
+    <%- body %> 
+
+</main>
+    <%- include('../partials/footer') %> 
+  
+</body>
+</html>

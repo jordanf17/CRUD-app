@@ -1,0 +1,14 @@
+<% layout('/layouts/boilerplate') %>
+    
+    <h1>edit product</h1>
+    <form action="/products/<%=aproduct._id%>?_method=PUT" method="POST">
+        <input type="text" name="name" id="name" placeholder="product name" value="<%=aproduct.name %> ">
+        <input type="number" name="price" id="price" placeholder="price" value="<%=aproduct.price%>">
+        <select name="category" id="category"9>
+            <option value="fruit">fruit</option>
+            <option value="vegetable">vegetable</option>
+            <option value="dairy">dairy</option>
+        </select>
+        <button>SUBMIT</button>
+    </form>
+    <a href="/products">go home</a>

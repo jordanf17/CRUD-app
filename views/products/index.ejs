@@ -1,0 +1,15 @@
+<% layout('/layouts/boilerplate') %>
+
+    <H1>ALL PRODUCTS</H1>
+    <ul>
+<% for(let product of products){ %>
+<li><a href="/products/<%=product._id%>"><%= product.name%></a>   </li>
+    
+<%}%>
+
+    </ul>
+    <a href="/products/new">Enter new product</a>
+    
+
+
+

@@ -1,0 +1,11 @@
+<% layout('/layouts/boilerplate') %>
+    <h1><%= anyproduct.name  %> </h1>
+    <ul>
+        <li>Price: <%= anyproduct.price %> </li>
+        <li>Category: <%= anyproduct.category %> </li>
+    </ul>
+    <a href="/products/<%=anyproduct._id%>/edit">edit</a>
+    <a href="/products">go home</a>
+    <form action="/products/<%=anyproduct._id%>?_method=DELETE" method="POST">
+        <button>Delete</button>
+    </form>
